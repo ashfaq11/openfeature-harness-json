@@ -1,0 +1,63 @@
+{
+	"identifier": "string",
+	"name": "Beta Testers",
+	"environment": "Production",
+	"tags": [
+		{
+			"name": "string",
+			"value": "string"
+		}
+	],
+	"included": [
+		{
+			"identifier": "john-doe",
+			"account": "abcXDdffdaffd",
+			"org": "string",
+			"environment": "string",
+			"project": "string",
+			"name": "John Doe",
+			"anonymous": true,
+			"attributes": {
+				"age": 20,
+				"location": "Belfast"
+			},
+			"createdAt": 0,
+			"segments": [
+				null
+			]
+		}
+	],
+	"excluded": [
+		{
+			"identifier": "john-doe",
+			"account": "abcXDdffdaffd",
+			"org": "string",
+			"environment": "string",
+			"project": "string",
+			"name": "John Doe",
+			"anonymous": true,
+			"attributes": {
+				"age": 20,
+				"location": "Belfast"
+			},
+			"createdAt": 0,
+			"segments": [
+				null
+			]
+		}
+	],
+	"rules": [
+		{
+			"id": 32434243,
+			"attribute": "identifier",
+			"op": "starts_with",
+			"values": [
+				"string"
+			],
+			"negate": false
+		}
+	],
+	"createdAt": 0,
+	"modifiedAt": 0,
+	"version": 1
+}

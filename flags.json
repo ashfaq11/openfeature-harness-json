@@ -1,0 +1,78 @@
+{
+  "featureFlags": {
+    "flags": [
+      {
+        "flag": {
+          "name": "flag1",
+          "identifier": "flag1",
+          "description": "",
+          "permanent": false,
+          "spec": {
+            "type": "boolean",
+            "default": {
+              "onVariation": "true",
+              "offVariation": "false"
+            },
+            "variations": [
+              {
+                "identifier": "true",
+                "value": "true"
+              },
+              {
+                "identifier": "false",
+                "value": "false"
+              }
+            ]
+          },
+          "environments": [
+            {
+              "identifier": "test",
+              "default": {
+                "onVariation": "true",
+                "offVariation": "false"
+              },
+              "state": "off"
+            }
+          ]
+        }
+      },
+      {
+        "flag": {
+          "name": "flag2",
+          "identifier": "flag2",
+          "description": "",
+          "permanent": false,
+          "spec": {
+            "type": "boolean",
+            "default": {
+              "onVariation": "true",
+              "offVariation": "false"
+            },
+            "variations": [
+              {
+                "identifier": "true",
+                "value": "true"
+              },
+              {
+                "identifier": "false",
+                "value": "false"
+              }
+            ]
+          },
+          "environments": [
+            {
+              "identifier": "test",
+              "default": {
+                "onVariation": "true",
+                "offVariation": "false"
+              },
+              "state": "on"
+            }
+          ]
+        }
+      }
+    ],
+    "projectIdentifier": "default_project",
+    "orgIdentifier": "default"
+  }
+}

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.demo_harness.DemoHarnessApplicationTests" time="1.471" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness/target/test-classes:/Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness/target/classes:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.1/spring-boot-starter-web-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.1/spring-boot-starter-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.1/spring-boot-starter-logging-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/sashfaqhussain/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/Users/sashfaqhussain/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/sashfaqhussain/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/sashfaqhussain/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/sashfaqhussain/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/sashfaqhussain/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.1/spring-boot-starter-json-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.1/jackson-module-parameter-names-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.1/spring-boot-starter-tomcat-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.25/tomcat-embed-core-10.1.25.jar:/Users/sashfaqhussain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.25/tomcat-embed-el-10.1.25.jar:/Users/sashfaqhussain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.25/tomcat-embed-websocket-10.1.25.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-web/6.1.10/spring-web-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-beans/6.1.10/spring-beans-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/io/micrometer/micrometer-observation/1.13.1/micrometer-observation-1.13.1.jar:/Users/sashfaqhussain/.m2/repository/io/micrometer/micrometer-commons/1.13.1/micrometer-commons-1.13.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-webmvc/6.1.10/spring-webmvc-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-aop/6.1.10/spring-aop-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-context/6.1.10/spring-context-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-expression/6.1.10/spring-expression-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-devtools/3.3.1/spring-boot-devtools-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot/3.3.1/spring-boot-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.1/spring-boot-autoconfigure-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.1/spring-boot-starter-test-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-test/3.3.1/spring-boot-test-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.1/spring-boot-test-autoconfigure-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/sashfaqhussain/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/sashfaqhussain/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/sashfaqhussain/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/sashfaqhussain/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/sashfaqhussain/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/sashfaqhussain/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/sashfaqhussain/.m2/repository/net/bytebuddy/byte-buddy/1.14.17/byte-buddy-1.14.17.jar:/Users/sashfaqhussain/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/sashfaqhussain/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sashfaqhussain/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/sashfaqhussain/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar:/Users/sashfaqhussain/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/sashfaqhussain/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/sashfaqhussain/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/sashfaqhussain/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-core/6.1.10/spring-core-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-jcl/6.1.10/spring-jcl-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-test/6.1.10/spring-test-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/sashfaqhussain/.m2/repository/io/harness/ff-java-server-sdk/1.3.1/ff-java-server-sdk-1.3.1.jar:/Users/sashfaqhussain/.m2/repository/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0.jar:/Users/sashfaqhussain/.m2/repository/com/squareup/okio/okio/3.6.0/okio-3.6.0.jar:/Users/sashfaqhussain/.m2/repository/com/squareup/okio/okio-jvm/3.6.0/okio-jvm-3.6.0.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.24/kotlin-stdlib-common-1.9.24.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.24/kotlin-stdlib-jdk8-1.9.24.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.24/kotlin-stdlib-jdk7-1.9.24.jar:/Users/sashfaqhussain/.m2/repository/com/squareup/okhttp3/logging-interceptor/4.12.0/logging-interceptor-4.12.0.jar:/Users/sashfaqhussain/.m2/repository/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0.jar:/Users/sashfaqhussain/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/Users/sashfaqhussain/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/sashfaqhussain/.m2/repository/org/threeten/threetenbp/1.4.3/threetenbp-1.4.3.jar:/Users/sashfaqhussain/.m2/repository/io/gsonfire/gson-fire/1.7.1/gson-fire-1.7.1.jar:/Users/sashfaqhussain/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/sashfaqhussain/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.1.8/caffeine-3.1.8.jar:/Users/sashfaqhussain/.m2/repository/org/checkerframework/checker-qual/3.37.0/checker-qual-3.37.0.jar:/Users/sashfaqhussain/.m2/repository/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.jar:/Users/sashfaqhussain/.m2/repository/com/sangupta/murmur/1.0.0/murmur-1.0.0.jar:/Users/sashfaqhussain/.m2/repository/io/swagger/swagger-annotations/1.6.2/swagger-annotations-1.6.2.jar:/Users/sashfaqhussain/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/sashfaqhussain/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/Users/sashfaqhussain/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/sashfaqhussain/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="SDK" value="JAVA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness/target/surefire/surefirebooter-20240722144729862_3.jar /Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness/target/surefire 2024-07-22T14-47-29_668-jvmRun1 surefire-20240722144729862_1tmp surefire_0-20240722144729862_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness/target/test-classes:/Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness/target/classes:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.1/spring-boot-starter-web-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.1/spring-boot-starter-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.1/spring-boot-starter-logging-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/sashfaqhussain/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/Users/sashfaqhussain/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/sashfaqhussain/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/sashfaqhussain/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/sashfaqhussain/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/sashfaqhussain/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.1/spring-boot-starter-json-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.1/jackson-module-parameter-names-2.17.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.1/spring-boot-starter-tomcat-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.25/tomcat-embed-core-10.1.25.jar:/Users/sashfaqhussain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.25/tomcat-embed-el-10.1.25.jar:/Users/sashfaqhussain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.25/tomcat-embed-websocket-10.1.25.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-web/6.1.10/spring-web-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-beans/6.1.10/spring-beans-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/io/micrometer/micrometer-observation/1.13.1/micrometer-observation-1.13.1.jar:/Users/sashfaqhussain/.m2/repository/io/micrometer/micrometer-commons/1.13.1/micrometer-commons-1.13.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-webmvc/6.1.10/spring-webmvc-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-aop/6.1.10/spring-aop-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-context/6.1.10/spring-context-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-expression/6.1.10/spring-expression-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-devtools/3.3.1/spring-boot-devtools-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot/3.3.1/spring-boot-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.1/spring-boot-autoconfigure-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.1/spring-boot-starter-test-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-test/3.3.1/spring-boot-test-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.1/spring-boot-test-autoconfigure-3.3.1.jar:/Users/sashfaqhussain/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/sashfaqhussain/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/sashfaqhussain/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/sashfaqhussain/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/sashfaqhussain/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/sashfaqhussain/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/sashfaqhussain/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/sashfaqhussain/.m2/repository/net/bytebuddy/byte-buddy/1.14.17/byte-buddy-1.14.17.jar:/Users/sashfaqhussain/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/sashfaqhussain/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sashfaqhussain/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/sashfaqhussain/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/sashfaqhussain/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar:/Users/sashfaqhussain/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/sashfaqhussain/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/sashfaqhussain/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/sashfaqhussain/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-core/6.1.10/spring-core-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-jcl/6.1.10/spring-jcl-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/springframework/spring-test/6.1.10/spring-test-6.1.10.jar:/Users/sashfaqhussain/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/sashfaqhussain/.m2/repository/io/harness/ff-java-server-sdk/1.3.1/ff-java-server-sdk-1.3.1.jar:/Users/sashfaqhussain/.m2/repository/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0.jar:/Users/sashfaqhussain/.m2/repository/com/squareup/okio/okio/3.6.0/okio-3.6.0.jar:/Users/sashfaqhussain/.m2/repository/com/squareup/okio/okio-jvm/3.6.0/okio-jvm-3.6.0.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.24/kotlin-stdlib-common-1.9.24.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.24/kotlin-stdlib-jdk8-1.9.24.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/sashfaqhussain/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.24/kotlin-stdlib-jdk7-1.9.24.jar:/Users/sashfaqhussain/.m2/repository/com/squareup/okhttp3/logging-interceptor/4.12.0/logging-interceptor-4.12.0.jar:/Users/sashfaqhussain/.m2/repository/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0.jar:/Users/sashfaqhussain/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/Users/sashfaqhussain/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/sashfaqhussain/.m2/repository/org/threeten/threetenbp/1.4.3/threetenbp-1.4.3.jar:/Users/sashfaqhussain/.m2/repository/io/gsonfire/gson-fire/1.7.1/gson-fire-1.7.1.jar:/Users/sashfaqhussain/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/sashfaqhussain/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.1.8/caffeine-3.1.8.jar:/Users/sashfaqhussain/.m2/repository/org/checkerframework/checker-qual/3.37.0/checker-qual-3.37.0.jar:/Users/sashfaqhussain/.m2/repository/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.jar:/Users/sashfaqhussain/.m2/repository/com/sangupta/murmur/1.0.0/murmur-1.0.0.jar:/Users/sashfaqhussain/.m2/repository/io/swagger/swagger-annotations/1.6.2/swagger-annotations-1.6.2.jar:/Users/sashfaqhussain/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/sashfaqhussain/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/Users/sashfaqhussain/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/sashfaqhussain/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sashfaqhussain"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home"/>
+    <property name="version" value="1.3.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="/Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness/target/surefire/surefirebooter-20240722144729862_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.11+9-LTS"/>
+    <property name="user.name" value="sashfaqhussain"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.11.9.1"/>
+    <property name="localRepository" value="/Users/sashfaqhussain/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/sm/rytgq1nd7xj7y0x555bsx7100000gp/T/"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="/Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="60314"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sashfaqhussain/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.11+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[demo-harness] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.example.demo_harness.DemoHarnessApplicationTests" time="0.546">
+    <system-out><![CDATA[14:47:31.032 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo_harness.DemoHarnessApplicationTests]: DemoHarnessApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:47:31.091 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo_harness.DemoHarnessApplication for test class com.example.demo_harness.DemoHarnessApplicationTests
+14:47:31.153 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-07-22T14:47:31.264+05:30  INFO 60314 --- [demo-harness] [           main] c.e.d.DemoHarnessApplicationTests        : Starting DemoHarnessApplicationTests using Java 17.0.11 with PID 60314 (started by sashfaqhussain in /Users/sashfaqhussain/Desktop/Trinet SDK/demo-harness)
+2024-07-22T14:47:31.264+05:30  INFO 60314 --- [demo-harness] [           main] c.e.d.DemoHarnessApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2024-07-22T14:47:31.595+05:30  INFO 60314 --- [demo-harness] [           main] i.h.cf.client.connector.LocalConnector   : LocalConnector initialized with source ./local
+2024-07-22T14:47:31.608+05:30  INFO 60314 --- [demo-harness] [           main] io.harness.cf.client.api.CaffeineCache   : CaffeineCache initialized with size 10000
+2024-07-22T14:47:31.609+05:30  INFO 60314 --- [demo-harness] [           main] io.harness.cf.client.api.InnerClient     : Starting SDK client with configuration: BaseConfig(streamEnabled=true, pollIntervalInSeconds=60, analyticsEnabled=true, globalTargetEnabled=true, frequency=60, bufferSize=2048, allAttributesPrivate=false, privateAttributes=[], debug=false, metricsServiceAcceptableDuration=10000, cache=io.harness.cf.client.api.CaffeineCache@48528634, store=null)
+2024-07-22T14:47:31.609+05:30  INFO 60314 --- [demo-harness] [           main] i.h.cf.client.connector.LocalConnector   : authenticate
+2024-07-22T14:47:31.614+05:30  INFO 60314 --- [demo-harness] [           main] io.harness.cf.client.api.AuthService     : Authentication service initialized
+2024-07-22T14:47:31.616+05:30 DEBUG 60314 --- [demo-harness] [           main] io.harness.cf.client.api.InnerClient     : MetricsProcessor ready
+2024-07-22T14:47:31.616+05:30  INFO 60314 --- [demo-harness] [           main] i.harness.cf.client.api.UpdateProcessor  : Update processor initialized
+2024-07-22T14:47:31.616+05:30  INFO 60314 --- [demo-harness] [           main] io.harness.cf.client.api.AuthService     : authentication started
+2024-07-22T14:47:31.617+05:30  INFO 60314 --- [demo-harness] [           main] io.harness.cf.client.api.InnerClient     : Wait for initialization to finish
+2024-07-22T14:47:31.617+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : authenticate
+2024-07-22T14:47:31.617+05:30  INFO 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.common.SdkCodes     : SDKCODE(auth:2000): Authenticated ok 
+2024-07-22T14:47:31.617+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.InnerClient     : SDK successfully logged in
+2024-07-22T14:47:31.618+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.InnerClient     : start poller processor
+2024-07-22T14:47:31.618+05:30  INFO 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.common.SdkCodes     : SDKCODE(poll:4000): Polling started, intervalMs: 60000
+2024-07-22T14:47:31.618+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.PollingProcessor       : running poll iteration
+2024-07-22T14:47:31.618+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.InnerClient     : Stream enabled, start update processor
+2024-07-22T14:47:31.618+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.harness.cf.client.api.UpdateProcessor  : Starting updater (EventSource)
+2024-07-22T14:47:31.618+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : Initializing stream
+2024-07-22T14:47:31.618+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.PollingProcessor       : Fetching flags started
+2024-07-22T14:47:31.619+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : List files in ./local with flags
+2024-07-22T14:47:31.619+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : List files successfully executed
+2024-07-22T14:47:31.620+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.FileWatcher      : FileWatcher initialized with path ./local/flags/flag
+2024-07-22T14:47:31.620+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : Loading file ./local/flags/flags.json
+2024-07-22T14:47:31.620+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.FileWatcher      : FileWatcher initialized with path ./local/segments/target-segment
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.InnerClient     : onReady triggered
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.InnerClient     : Updater ready
+2024-07-22T14:47:31.621+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : FileWatcherService initialized
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : Stream successfully initialized
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : File was successfully loaded ./local/flags/flags.json
+2024-07-22T14:47:31.621+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : FileWatcherService starting
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.FileWatcher      : starting monitor
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.FileWatcher      : monitor started
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.FileWatcher      : starting monitor
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [       Thread-3] i.h.cf.client.connector.FileWatcher      : waiting for create event
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.FileWatcher      : monitor started
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [       Thread-4] i.h.cf.client.connector.FileWatcher      : waiting for create event
+2024-07-22T14:47:31.621+05:30  INFO 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.common.SdkCodes     : SDKCODE(stream:5000): SSE stream connected ok 
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.PollingProcessor       : Fetching flags started
+2024-07-22T14:47:31.621+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : List files in ./local with flags
+2024-07-22T14:47:31.622+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : List files successfully executed
+2024-07-22T14:47:31.622+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : Loading file ./local/flags/flags.json
+2024-07-22T14:47:31.622+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : File was successfully loaded ./local/flags/flags.json
+2024-07-22T14:47:31.628+05:30  INFO 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : Flags successfully loaded from ./local/flags
+2024-07-22T14:47:31.628+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : Flags successfully loaded from ./local/flags
+2024-07-22T14:47:31.628+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.PollingProcessor       : Fetching flags finished
+2024-07-22T14:47:31.628+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.PollingProcessor       : Fetching flags finished
+2024-07-22T14:47:31.629+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.CaffeineCache   : Key flags/flag1 not found in cache
+2024-07-22T14:47:31.629+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.api.CaffeineCache   : Key flags/flag1 not found in cache
+2024-07-22T14:47:31.629+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.StorageRepository      : Flag is outdated flag1
+2024-07-22T14:47:31.629+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.StorageRepository      : Flag is outdated flag1
+2024-07-22T14:47:31.629+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.api.CaffeineCache   : New value in the cache with key flags/flag1 and value class FeatureConfig {
+    project: FeatureFlagsDemo
+    environment: local
+    feature: flag1
+    state: on
+    kind: boolean
+    variations: [class Variation {
+        identifier: true
+        value: true
+        name: Enable Page
+        description: null
+    }, class Variation {
+        identifier: false
+        value: false
+        name: Disable Page
+        description: null
+    }]
+    rules: []
+    defaultServe: class Serve {
+        distribution: null
+        variation: true
+    }
+    offVariation: false
+    prerequisites: []
+    variationToTargetMap: null
+    version: null
+}
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.CaffeineCache   : New value in the cache with key flags/flag1 and value class FeatureConfig {
+    project: FeatureFlagsDemo
+    environment: local
+    feature: flag1
+    state: on
+    kind: boolean
+    variations: [class Variation {
+        identifier: true
+        value: true
+        name: Enable Page
+        description: null
+    }, class Variation {
+        identifier: false
+        value: false
+        name: Disable Page
+        description: null
+    }]
+    rules: []
+    defaultServe: class Serve {
+        distribution: null
+        variation: true
+    }
+    offVariation: false
+    prerequisites: []
+    variationToTargetMap: null
+    version: null
+}
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.StorageRepository      : Flag flag1 successfully cached
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.StorageRepository      : Flag flag1 successfully cached
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.PollingProcessor       : Fetching segments started
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.PollingProcessor       : Fetching segments started
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : Loading target groups from path ./local/segments
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : Loading target groups from path ./local/segments
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : List files in ./local with segments
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : List files in ./local with segments
+2024-07-22T14:47:31.630+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : List files successfully executed
+2024-07-22T14:47:31.631+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : List files successfully executed
+2024-07-22T14:47:31.631+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : Loading file ./local/segments/flags-segments.json
+2024-07-22T14:47:31.631+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : Loading file ./local/segments/flags-segments.json
+2024-07-22T14:47:31.639+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : File was successfully loaded ./local/segments/flags-segments.json
+2024-07-22T14:47:31.639+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : File was successfully loaded ./local/segments/flags-segments.json
+2024-07-22T14:47:31.641+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : Target groups successfully loaded from ./local/segments
+2024-07-22T14:47:31.641+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.connector.LocalConnector   : Target groups successfully loaded from ./local/segments
+2024-07-22T14:47:31.641+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.PollingProcessor       : Fetching segments finished
+2024-07-22T14:47:31.641+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.PollingProcessor       : Fetching segments finished
+2024-07-22T14:47:31.642+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.api.CaffeineCache   : Key segments/string not found in cache
+2024-07-22T14:47:31.642+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.CaffeineCache   : Key segments/string not found in cache
+2024-07-22T14:47:31.642+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.StorageRepository      : Segment is outdated string
+2024-07-22T14:47:31.642+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.StorageRepository      : Segment is outdated string
+2024-07-22T14:47:31.642+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.api.CaffeineCache   : New value in the cache with key segments/string and value class Segment {
+    identifier: string
+    name: Beta Testers
+    environment: Production
+    tags: [class Tag {
+        name: string
+        value: string
+    }]
+    included: [class Target {
+        identifier: john-doe
+        account: abcXDdffdaffd
+        org: string
+        environment: string
+        project: string
+        name: John Doe
+        anonymous: true
+        attributes: {age=20.0, location=Belfast}
+        createdAt: 0
+        segments: [null]
+    }]
+    excluded: [class Target {
+        identifier: john-doe
+        account: abcXDdffdaffd
+        org: string
+        environment: string
+        project: string
+        name: John Doe
+        anonymous: true
+        attributes: {age=20.0, location=Belfast}
+        createdAt: 0
+        segments: [null]
+    }]
+    rules: [class Clause {
+        id: 32434243
+        attribute: identifier
+        op: starts_with
+        values: [string]
+        negate: false
+    }]
+    createdAt: 0
+    modifiedAt: 0
+    version: 1
+}
+2024-07-22T14:47:31.642+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.CaffeineCache   : New value in the cache with key segments/string and value class Segment {
+    identifier: string
+    name: Beta Testers
+    environment: Production
+    tags: [class Tag {
+        name: string
+        value: string
+    }]
+    included: [class Target {
+        identifier: john-doe
+        account: abcXDdffdaffd
+        org: string
+        environment: string
+        project: string
+        name: John Doe
+        anonymous: true
+        attributes: {age=20.0, location=Belfast}
+        createdAt: 0
+        segments: [null]
+    }]
+    excluded: [class Target {
+        identifier: john-doe
+        account: abcXDdffdaffd
+        org: string
+        environment: string
+        project: string
+        name: John Doe
+        anonymous: true
+        attributes: {age=20.0, location=Belfast}
+        createdAt: 0
+        segments: [null]
+    }]
+    rules: [class Clause {
+        id: 32434243
+        attribute: identifier
+        op: starts_with
+        values: [string]
+        negate: false
+    }]
+    createdAt: 0
+    modifiedAt: 0
+    version: 1
+}
+2024-07-22T14:47:31.642+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.StorageRepository      : Segment string successfully cached
+2024-07-22T14:47:31.642+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.StorageRepository      : Segment string successfully cached
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.CaffeineCache   : Keys in cache [flags/flag1, segments/string]
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.api.CaffeineCache   : Keys in cache [flags/flag1, segments/string]
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.CaffeineCache   : Key flags/flags/flag1 not found in cache
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.api.CaffeineCache   : Key flags/flags/flag1 not found in cache
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.StorageRepository      : Flag not found flags/flag1, continue...
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.StorageRepository      : Flag not found flags/flag1, continue...
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.CaffeineCache   : Key flags/segments/string not found in cache
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.api.CaffeineCache   : Key flags/segments/string not found in cache
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.StorageRepository      : Flag not found segments/string, continue...
+2024-07-22T14:47:31.644+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.StorageRepository      : Flag not found segments/string, continue...
+2024-07-22T14:47:31.644+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.api.PollingProcessor       : Stopping PollingProcessor
+2024-07-22T14:47:31.644+05:30  INFO 60314 --- [demo-harness] [     PollThread] i.h.cf.client.api.PollingProcessor       : PollingProcessor initialized
+2024-07-22T14:47:31.645+05:30  INFO 60314 --- [demo-harness] [     AuthThread] i.h.cf.client.connector.LocalConnector   : FileWatcherService started
+2024-07-22T14:47:31.645+05:30 DEBUG 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.api.InnerClient     : PollingProcessor ready
+2024-07-22T14:47:31.645+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.InnerClient     : Analytics enabled, start metrics processor
+2024-07-22T14:47:31.645+05:30  INFO 60314 --- [demo-harness] [     PollThread] io.harness.cf.client.common.SdkCodes     : SDKCODE(init:1000): The SDK has successfully initialized 
+2024-07-22T14:47:31.645+05:30  INFO 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.common.SdkCodes     : SDKCODE(metric:7000): Metrics thread started, intervalMs: 60000
+2024-07-22T14:47:31.645+05:30  INFO 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.AuthService     : Stopping Auth service
+2024-07-22T14:47:31.645+05:30 DEBUG 60314 --- [demo-harness] [     AuthThread] io.harness.cf.client.api.AuthService     : authentication job done
+2024-07-22T14:47:31.840+05:30  INFO 60314 --- [demo-harness] [           main] c.e.d.DemoHarnessApplicationTests        : Started DemoHarnessApplicationTests in 0.692 seconds (process running for 1.838)
+]]></system-out>
+  </testcase>
+</testsuite>
