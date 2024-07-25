@@ -1,7 +1,6 @@
 package com.example.demo_harness.config;
 
 import com.example.demo_harness.jsonparser.FeatureFlagsLoader;
-
 import dev.openfeature.sdk.EvaluationContext;
 import dev.openfeature.sdk.FeatureProvider;
 import dev.openfeature.sdk.Metadata;
@@ -12,35 +11,39 @@ import dev.openfeature.sdk.Value;
 public class LocalProvider implements FeatureProvider {
 	@Override
 	public Metadata getMetadata() {
-		return () -> "My Provider";
+		return () -> "Local Provider";
 	}
 
 	@Override
 	public ProviderState getState() {
 		return null;
-		// optionally indicate your provider's state (assumed to be READY if not
-		// implemented)
 	}
 
 	@Override
 	public void initialize(EvaluationContext evaluationContext)
 			throws Exception {
-		// start up your provider
 	}
 
 	@Override
 	public void shutdown() {
-		// shut down your provider
+		
 	}
+	
+	
 
 	@Override
 	public ProviderEvaluation<Boolean> getBooleanEvaluation(String key,
 			Boolean defaultValue, EvaluationContext ctx) {
-		// resolve a boolean flag value
 
 		try {
-			return ProviderEvaluation.<Boolean>builder()
-					.value(FeatureFlagsLoader.getBooleanValue(key)).build();
+			if (ctx.getValue("environment") != null) {
+				String environment = ctx.getValue("environment").asString();
+				return ProviderEvaluation.<Boolean>builder().value(
+						new FeatureFlagsLoader().getBooleanValue(key, environment))
+						.build();
+			} else {
+				throw new RuntimeException("Environment not found");
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw new RuntimeException(e.getMessage());

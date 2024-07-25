@@ -1,0 +1,43 @@
+pipeline:
+  name: build
+  identifier: build
+  projectIdentifier: CloudApps
+  orgIdentifier: TriNet
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: Git_Hyd
+        repoName: openfeature-harness-json
+        build: <+input>
+  stages:
+    - stage:
+        name: build
+        identifier: build
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: RunTests
+                  name: RunTests_1
+                  identifier: RunTests_1
+                  spec:
+                    language: Java
+                    buildTool: Maven
+                    args: clean test
+                    runOnlySelectedTests: true
+                    reports:
+                      type: JUnit
+                      spec:
+                        paths:
+                          - /reports/test.xml
+                    enableTestSplitting: false

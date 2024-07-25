@@ -1,0 +1,292 @@
+featureFlags:
+  flags:
+  - flag:
+      name: crud_operations
+      identifier: crud_operations
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: develop
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: stage
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: demo
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: employee_list
+      identifier: employee_list
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: develop
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: stage
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: demo
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: JiraFF
+      identifier: JiraFF
+      description: 'check for this flag two Pipeline run time '
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: develop
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: stage
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: demo
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: Jira_flag
+      identifier: Jira_flag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: develop
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: stage
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: demo
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: jsonFlag
+      identifier: jsonFlag
+      description: ""
+      permanent: false
+      spec:
+        type: json
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        variations:
+        - identifier: Val1
+          value: '{"key":"value1"}'
+        - identifier: Val2
+          value: '{"key":"value2"}'
+      environments:
+      - identifier: develop
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+      - identifier: stage
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+      - identifier: demo
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+  - flag:
+      name: My_Test_Flag
+      identifier: My_Test_Flag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: develop
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: stage
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: demo
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: Number
+      identifier: Number
+      description: ""
+      permanent: false
+      spec:
+        type: int
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        variations:
+        - identifier: Val1
+          value: "1"
+        - identifier: Val2
+          value: "2"
+      environments:
+      - identifier: develop
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+      - identifier: stage
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+      - identifier: demo
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+  - flag:
+      name: ui_styling
+      identifier: ui_styling
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: develop
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: stage
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: demo
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  projectIdentifier: CloudApps
+  orgIdentifier: TriNet

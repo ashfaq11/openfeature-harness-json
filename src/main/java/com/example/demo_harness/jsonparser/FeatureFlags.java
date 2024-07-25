@@ -3,15 +3,10 @@ package com.example.demo_harness.jsonparser;
 import java.util.List;
 
 public class FeatureFlags {
-    private List<FlagContainer> flags;
+    private List<Flag> flags;
     private String projectIdentifier;
     private String orgIdentifier;
-	public List<FlagContainer> getFlags() {
-		return flags;
-	}
-	public void setFlags(List<FlagContainer> flags) {
-		this.flags = flags;
-	}
+	 
 	public String getProjectIdentifier() {
 		return projectIdentifier;
 	}
@@ -23,6 +18,12 @@ public class FeatureFlags {
 	}
 	public void setOrgIdentifier(String orgIdentifier) {
 		this.orgIdentifier = orgIdentifier;
+	}
+	public List<Flag> getFlags() {
+		return flags;
+	}
+	public void setFlags(List<Flag> flags) {
+		this.flags = flags;
 	}
 
     
