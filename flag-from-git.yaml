@@ -26,6 +26,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+      - identifier: demo
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: employee_list
       identifier: employee_list
@@ -52,6 +57,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+      - identifier: demo
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: JiraFF
       identifier: JiraFF
@@ -74,6 +84,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: stage
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: demo
         default:
           onVariation: "false"
           offVariation: "false"
@@ -104,6 +119,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+      - identifier: demo
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: jsonFlag
       identifier: jsonFlag
@@ -126,6 +146,11 @@ featureFlags:
           offVariation: Val2
         state: "off"
       - identifier: stage
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
+      - identifier: demo
         default:
           onVariation: Val1
           offVariation: Val2
@@ -156,6 +181,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+      - identifier: demo
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: Number
       identifier: Number
@@ -182,6 +212,11 @@ featureFlags:
           onVariation: Val1
           offVariation: Val2
         state: "off"
+      - identifier: demo
+        default:
+          onVariation: Val1
+          offVariation: Val2
+        state: "off"
   - flag:
       name: ui_styling
       identifier: ui_styling
@@ -204,6 +239,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: stage
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: demo
         default:
           onVariation: "true"
           offVariation: "false"
