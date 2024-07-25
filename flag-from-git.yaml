@@ -153,8 +153,8 @@ featureFlags:
         state: "off"
       - identifier: stage
         default:
-          onVariation: "true"
-          offVariation: "false"
+          onVariation: "false"
+          offVariation: "true"
         state: "on"
   - flag:
       name: Number
