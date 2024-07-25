@@ -1,51 +1,53 @@
 package com.example.demo_harness.jsonparser;
 
-import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.StringWriter;
 import java.util.List;
 import java.util.Optional;
 
+import org.yaml.snakeyaml.Yaml;
+
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 
 import dev.openfeature.sdk.ErrorCode;
 public class FeatureFlagsLoader {
-	public static void main(String[] args) throws Exception {
-		System.out.println(getBooleanValue("flag1"));
-		System.out.println(getBooleanValue("flag2"));
-		// System.out.println(getValue("pipeline2"));
 
-	}
-
-	public static boolean getBooleanValue(String identifier) throws Exception {
-		ObjectMapper objectMapper = new ObjectMapper();
+	public boolean getBooleanValue(String identifier, String environment) throws Exception {
 		try {
-			objectMapper.configure(
-					DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-			FeatureFlagContainer featureFlagContainer = objectMapper.readValue(
-					new File("./flags.json"), FeatureFlagContainer.class);
-			FeatureFlags featureFlags = featureFlagContainer.getFeatureFlags();
-			List<FlagContainer> flags = featureFlags.getFlags();
-			// System.out.println("flags :");
-			//
-			// flags.forEach(flagContainer -> {
-			// System.out.println(flagContainer.getFlag().getIdentifier());
-			// // Process the flags as needed
-			// });
-			//
-			Optional<FlagContainer> flag = flags.stream().filter(flagContainer -> flagContainer.getFlag()
-							.getIdentifier().equalsIgnoreCase(identifier)).findAny();
+			ObjectMapper objectMapper = new ObjectMapper();
+			Yaml yaml = new Yaml();
+			Gson gson = new Gson();        
+			Object obj = yaml.load(new FileReader("./flags.yaml"));
+			StringWriter writer = new StringWriter();
+			gson.toJson(obj, writer);
+			String jsonResult = writer.toString();
 			
-			if (flag.isPresent()) {
-				return Boolean.valueOf((flag.get().getFlag().getEnvironments()
-						.get(0).getState().equalsIgnoreCase("ON")
-								? flag.get().getFlag().getEnvironments().get(0)
-										.getDefaultVariation().getOnVariation()
-								: flag.get().getFlag().getEnvironments().get(0)
-										.getDefaultVariation()
-										.getOffVariation()));
+			objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+			FeatureFlagContainer featureFlagContainer = objectMapper.readValue(jsonResult, FeatureFlagContainer.class);
+			FeatureFlags featureFlags = featureFlagContainer.getFeatureFlags();
+			
+			List<Flag> flags = featureFlags.getFlags();
+			Optional<Flag> flagResult = flags.stream().filter(flag -> flag.getIdentifier().equalsIgnoreCase(identifier)).findAny();
+			
+			
+			
+			if (flagResult.isPresent()) {
+				Optional<Environment> currentEnvironment = flagResult.get().getEnvironments().stream().filter(env -> env.getIdentifier().equalsIgnoreCase(environment)).findAny();
+				
+				if(currentEnvironment.isPresent()) {
+					return Boolean.valueOf(currentEnvironment.get().getState().equalsIgnoreCase("ON")?
+							currentEnvironment.get().getDefaultVariation().getOnVariation():
+								currentEnvironment.get().getDefaultVariation().getOffVariation());
+					
+				}else {
+					throw new Exception(ErrorCode.INVALID_CONTEXT.name()+" No Environment found");
+				}
+				
 			} else {
-				throw new Exception(ErrorCode.FLAG_NOT_FOUND.name());
+				throw new Exception(identifier+" "+ErrorCode.FLAG_NOT_FOUND.name());
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
