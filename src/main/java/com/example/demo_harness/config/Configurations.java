@@ -18,6 +18,7 @@ import dev.openfeature.sdk.Value;
 @Configuration
 public class Configurations {
 	Logger logger = LoggerFactory.getLogger(Configurations.class);
+	String apiKey = "1234567890abcdef"; // Hardcoded API key test added to test vulnerability
 
 	@Bean
 	WebMvcConfigurer corsConfigurer() {
